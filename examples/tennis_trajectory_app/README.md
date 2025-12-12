@@ -10,6 +10,8 @@ A YOLOv8n-based detection engine for tennis trajectory analysis, providing real-
 - **Trajectory Smoothing**: Kalman and EMA filtering for stable trajectories
 - **Performance Tracking**: Built-in performance monitoring and statistics
 - **CLI Interface**: Command-line tool for testing and validation
+- **GUI Interface**: Full graphical interface with model setup popup
+- **Batch File Startup**: Easy Windows startup with `start.bat`
 - **Extensible**: Easy to add new detection modes and custom models
 
 ## Architecture
@@ -46,13 +48,35 @@ For enhanced functionality:
 
 ## Quick Start
 
-### 1. List Available Models
+### Option 1: Windows Batch File (Recommended)
+
+**Double-click `start.bat`** for an easy-to-use menu interface:
+- GUI interface with model setup popup
+- CLI interface
+- Demo mode
+- Test runner
+- Status checker
+- Dependency installer
+
+### Option 2: GUI Interface
+
+```bash
+# Launch the full GUI application
+python detection_gui.py
+
+# Or use the popup-only interface
+python gui_popup.py
+```
+
+### Option 3: CLI Interface
+
+#### 1. List Available Models
 
 ```bash
 python cli.py --list-models
 ```
 
-### 2. Add a Detection Model
+#### 2. Add a Detection Model
 
 ```bash
 # Add a tennis ball detection model
@@ -65,7 +89,7 @@ python cli.py --add-model racket --yolo-model racket_detector.pt
 python cli.py --add-model player --yolo-model person_detector.pt
 ```
 
-### 3. Test Detection on Image
+#### 3. Test Detection on Image
 
 ```bash
 # Process an image for ball detection
@@ -75,14 +99,14 @@ python cli.py --test-image tennis_frame.jpg --mode ball --confidence 0.7
 python cli.py --test-image tennis_frame.jpg --mode player --confidence 0.8
 ```
 
-### 4. Test Detection on Video
+#### 4. Test Detection on Video
 
 ```bash
 # Process first 50 frames of a tennis video
 python cli.py --test-video tennis_match.mp4 --mode ball --frames 50
 ```
 
-### 5. Check Engine Status
+#### 5. Check Engine Status
 
 ```bash
 # Show current engine status
@@ -90,6 +114,13 @@ python cli.py --status
 
 # Show performance statistics
 python cli.py --performance
+```
+
+### Option 4: Demo Mode
+
+```bash
+# Run comprehensive demonstration
+python demo.py
 ```
 
 ## Programming Interface
