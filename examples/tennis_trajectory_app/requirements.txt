@@ -1,0 +1,28 @@
+"""Requirements for tennis trajectory detection engine."""
+
+# Core dependencies for YOLO and computer vision
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Additional dependencies for tracking and trajectory analysis
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Configuration and data handling
+pyyaml>=6.0
+pydantic>=2.0.0
+
+# Optional dependencies for enhanced functionality
+# (uncomment if needed)
+# scikit-image>=0.21.0  # For advanced image processing
+# matplotlib>=3.7.0     # For visualization and plotting
+# pandas>=2.0.0         # For data analysis and logging
+
+# Development and testing dependencies (optional)
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
