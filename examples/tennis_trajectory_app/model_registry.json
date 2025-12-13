@@ -1,0 +1,141 @@
+{
+  "models": {
+    "yolov8n_ball_placeholder": {
+      "name": "yolov8n_ball_placeholder",
+      "file_path": "models/yolov8n_ball_placeholder.pt",
+      "mode": "ball",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573334.5627737",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "yolov8n_racket_placeholder": {
+      "name": "yolov8n_racket_placeholder",
+      "file_path": "models/yolov8n_racket_placeholder.pt",
+      "mode": "racket",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573477.8147469",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "yolov8n_player_placeholder": {
+      "name": "yolov8n_player_placeholder",
+      "file_path": "models/yolov8n_player_placeholder.pt",
+      "mode": "player",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573499.270743",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "demo_ball_model": {
+      "name": "demo_ball_model",
+      "file_path": "models/demo_ball_model.pt",
+      "mode": "ball",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573701.2187042",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "demo_racket_model": {
+      "name": "demo_racket_model",
+      "file_path": "models/demo_racket_model.pt",
+      "mode": "racket",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573701.2387042",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "demo_player_model": {
+      "name": "demo_player_model",
+      "file_path": "models/demo_player_model.pt",
+      "mode": "player",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573701.2467043",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "demo_ball": {
+      "name": "demo_ball",
+      "file_path": "models/demo_ball.pt",
+      "mode": "ball",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573701.2587042",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "perf_test": {
+      "name": "perf_test",
+      "file_path": "models/perf_test.pt",
+      "mode": "ball",
+      "device": "auto",
+      "size": 1048602,
+      "created_at": "1765573701.2707043",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "fast_ball_v1": {
+      "name": "fast_ball_v1",
+      "file_path": "demo_models/fast_ball_v1.pt",
+      "mode": "ball",
+      "device": "cpu",
+      "size": 1048602,
+      "created_at": "1765573701.282704",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "accurate_ball_v2": {
+      "name": "accurate_ball_v2",
+      "file_path": "demo_models/accurate_ball_v2.pt",
+      "mode": "ball",
+      "device": "cpu",
+      "size": 1048602,
+      "created_at": "1765573701.2907043",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "racket_detector_v1": {
+      "name": "racket_detector_v1",
+      "file_path": "demo_models/racket_detector_v1.pt",
+      "mode": "racket",
+      "device": "cpu",
+      "size": 1048602,
+      "created_at": "1765573701.2987041",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    },
+    "player_tracker_v1": {
+      "name": "player_tracker_v1",
+      "file_path": "demo_models/player_tracker_v1.pt",
+      "mode": "player",
+      "device": "cpu",
+      "size": 1048602,
+      "created_at": "1765573701.3107042",
+      "is_active": false,
+      "validation_score": null,
+      "metadata": null
+    }
+  },
+  "active_models": {
+    "ball": "fast_ball_v1",
+    "racket": "racket_detector_v1",
+    "player": "player_tracker_v1"
+  }
+}
